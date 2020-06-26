@@ -1,0 +1,31 @@
+[2020-06-26 17:41:44.003] [exthost] [info] extension host started
+[2020-06-26 17:41:44.047] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-06-26 17:41:44.048] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2020-06-26 17:41:44.051] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-06-26 17:41:44.051] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/emmet/dist/extension
+[2020-06-26 17:41:44.068] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.git","_lower":"vscode.git"},"activationEvent":"*"}
+[2020-06-26 17:41:44.068] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/git/dist/main
+[2020-06-26 17:41:44.103] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":true,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"*"}
+[2020-06-26 17:41:44.103] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/github-authentication/dist/extension.js
+[2020-06-26 17:41:44.109] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-06-26 17:41:44.109] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2020-06-26 17:41:44.112] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-06-26 17:41:44.112] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/search-result/dist/extension.js
+[2020-06-26 17:41:44.113] [exthost] [info] ExtensionService#_doActivateExtension vscode.vscode-account {"startup":true,"extensionId":{"value":"vscode.vscode-account","_lower":"vscode.vscode-account"},"activationEvent":"*"}
+[2020-06-26 17:41:44.113] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/vscode-account/dist/extension.js
+[2020-06-26 17:41:44.116] [exthost] [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense {"startup":true,"extensionId":{"value":"christian-kohler.path-intellisense","_lower":"christian-kohler.path-intellisense"},"activationEvent":"*"}
+[2020-06-26 17:41:44.116] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/michaelcastillo/.vscode/extensions/christian-kohler.path-intellisense-2.2.1/out/extension.js
+[2020-06-26 17:41:44.131] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":true,"extensionId":{"value":"esbenp.prettier-vscode","_lower":"esbenp.prettier-vscode"},"activationEvent":"*"}
+[2020-06-26 17:41:44.132] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/michaelcastillo/.vscode/extensions/esbenp.prettier-vscode-5.1.0/dist/extension
+[2020-06-26 17:41:44.220] [exthost] [info] ExtensionService#_doActivateExtension peakchen90.vue-beautify {"startup":true,"extensionId":{"value":"peakchen90.vue-beautify","_lower":"peakchen90.vue-beautify"},"activationEvent":"*"}
+[2020-06-26 17:41:44.220] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/michaelcastillo/.vscode/extensions/peakchen90.vue-beautify-2.0.4/extension
+[2020-06-26 17:41:44.260] [exthost] [info] ExtensionService#_doActivateExtension Zignd.html-css-class-completion {"startup":true,"extensionId":{"value":"Zignd.html-css-class-completion","_lower":"zignd.html-css-class-completion"},"activationEvent":"*"}
+[2020-06-26 17:41:44.260] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/michaelcastillo/.vscode/extensions/zignd.html-css-class-completion-1.19.0/out/src/extension
+[2020-06-26 17:41:44.601] [exthost] [info] eager extensions activated
+[2020-06-26 17:41:44.657] [exthost] [error] Activating extension peakchen90.vue-beautify failed due to an error:
+[2020-06-26 17:41:44.661] [exthost] [error] TypeError: vscode.window.showWarningMessage is not a constructor
+    at activate (/home/michaelcastillo/.vscode/extensions/peakchen90.vue-beautify-2.0.4/extension.js:15:5)
+    at Function._callActivateOptional (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:788:244)
+    at Function._callActivate (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:787:909)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:786:960
+    at async Promise.all (index 9)
