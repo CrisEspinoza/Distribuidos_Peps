@@ -1,15 +1,28 @@
 import React, { useState } from "react";
 import { Button, TextField } from "@material-ui/core";
+import axios from "axios";
 const blankUser = {
   rut: "",
   name: "",
-  address: "",
-  reason: "",
+  adress: "",
+  goal: "",
 };
 const Permission = ({ ...props }) => {
   const [userData, setUserData] = useState({ ...blankUser });
   const changeUserData = (key) => (value) => {
     setUserData({ ...userData, [key]: value.target.value });
+  };
+  const submitData = () => {
+    axios
+      .post("http://localhost:1818/form", userData)
+      .then((result) => {
+        console.log(
+          "Tu solicitus ha sido realizada satisfactoriamente: ",
+          result
+        );
+      })
+      .catch((e) => console.log("Error al procesar la solicitud: ", e));
+    setTimeout(() => {}, 10000);
   };
   return (
     <form className="permission-form">
@@ -29,23 +42,23 @@ const Permission = ({ ...props }) => {
       />
       <TextField
         className="col-12 col-lg-6 "
-        id="address"
+        id="adress"
         label="Dirección"
-        value={userData.address}
-        onChange={changeUserData("address")}
+        value={userData.adress}
+        onChange={changeUserData("adress")}
       />
       <TextField
         className="col-12 col-lg-6 "
-        id="reason"
+        id="goal"
         label="Motivo del permiso"
-        value={userData.rut}
-        onChange={changeUserData("rut")}
+        value={userData.goal}
+        onChange={changeUserData("goal")}
       />
       <Button
         className="mt-3"
         variant="contained"
         color="primary"
-        type="submit"
+        onClick={submitData}
       >
         Enviar
       </Button>
