@@ -22,11 +22,11 @@ public class Form {
     private String name;
 
     @Column
-    private String adress;
+    private String address;
 
     @Column
     @Lob
-    private String goal;
+    private String reason;
 
     @Column
     private Date startDate;

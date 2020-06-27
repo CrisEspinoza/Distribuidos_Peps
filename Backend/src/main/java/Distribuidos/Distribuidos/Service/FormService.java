@@ -27,7 +27,7 @@ public class FormService {
         Form form = formMapper.ToForm(formDto);
         form.setStartDate(new Date());
         calendar.setTime(form.getStartDate());
-        //calendar.add(Calendar.DAY_OF_YEAR,1);
+        calendar.add(Calendar.DAY_OF_WEEK,1);
         form.setFinishDate(calendar.getTime());
         formDao.save(form);
         return formMapper.ToFormDto(form);

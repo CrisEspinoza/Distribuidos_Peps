@@ -11,8 +11,8 @@ public class FormDto {
     private Long id;
     private String rut;
     private String name;
-    private String adress;
-    private String goal;
+    private String address;
+    private String reason;
     private Date startDate;
     private Date finishDate;
 }

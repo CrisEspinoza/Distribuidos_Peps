@@ -43,14 +43,14 @@ const Permission = ({ ...props }) => {
         className="col-12 col-lg-6 pr-lg-1"
         id="adress"
         label="Dirección"
-        value={userData.adress}
+        value={userData.address}
         onChange={changeUserData("adress")}
       />
       <TextField
         className="col-12 col-lg-6 pr-lg-1"
         id="goal"
         label="Motivo del permiso"
-        value={userData.goal}
+        value={userData.reason}
         onChange={changeUserData("goal")}
       />
       <Button
