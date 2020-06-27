@@ -26,28 +26,28 @@ const Permission = ({ ...props }) => {
   return (
     <form className="permission-form">
       <TextField
-        className="col-12 col-lg-6 "
+        className="col-12 col-lg-6 pr-lg-1 "
         id="rut"
         label="Rut"
         value={userData.rut}
         onChange={changeUserData("rut")}
       />
       <TextField
-        className="col-12 col-lg-6 "
+        className="col-12 col-lg-6 pr-lg-1"
         id="name"
         label="Nombre"
         value={userData.name}
         onChange={changeUserData("name")}
       />
       <TextField
-        className="col-12 col-lg-6 "
+        className="col-12 col-lg-6 pr-lg-1"
         id="adress"
         label="Dirección"
         value={userData.adress}
         onChange={changeUserData("adress")}
       />
       <TextField
-        className="col-12 col-lg-6 "
+        className="col-12 col-lg-6 pr-lg-1"
         id="goal"
         label="Motivo del permiso"
         value={userData.goal}
