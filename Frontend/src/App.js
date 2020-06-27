@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar } from "./components";
-import { Home, Permission } from "./views";
+import { Home, Permission, SuccessPermission } from "./views";
 function App() {
   return (
     <div className="App">
@@ -16,6 +16,9 @@ function App() {
             </Route>
             <Route path="/permission">
               <Home />
+            </Route>
+            <Route path="/permissionSuccess">
+              <SuccessPermission />
             </Route>
           </div>
         </Switch>

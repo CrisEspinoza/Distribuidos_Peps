@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, TextField } from "@material-ui/core";
 import axios from "axios";
+import { useHistory } from "react-router-dom";
 const blankUser = {
   rut: "",
   name: "",
@@ -12,17 +13,15 @@ const Permission = ({ ...props }) => {
   const changeUserData = (key) => (value) => {
     setUserData({ ...userData, [key]: value.target.value });
   };
+  const history = useHistory();
   const submitData = () => {
     axios
       .post("http://localhost:1818/form", userData)
       .then((result) => {
-        console.log(
-          "Tu solicitus ha sido realizada satisfactoriamente: ",
-          result
-        );
+        console.log("La solicitud ha sido realizada satisfactoriamente: ");
+        history.push("permissionSuccess", { permission: result.data });
       })
       .catch((e) => console.log("Error al procesar la solicitud: ", e));
-    setTimeout(() => {}, 10000);
   };
   return (
     <form className="permission-form">
