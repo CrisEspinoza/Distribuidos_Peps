@@ -4,8 +4,12 @@ services:
     image: "backend-distri"
     ports:
       - "1818:1818"
-    networks:
-      - distribuidos
+    # networks:
+    #   - distribuidos
+    environment:
+      - SPRING_DATABASE_CONNECTION=jdbc:postgresql://localhost:5432/Distribuidos?autoReconnect=true&useSSL=false&createDatabaseIfNotExist=true
+      - SPRING_USERNAME=Distribuidos
+      - PASSWORD=Distribuidos
   db:
     network_mode: "host"
     image: postgres:12.1-alpine
@@ -18,9 +22,9 @@ services:
       POSTGRES_USER: Distribuidos
       POSTGRES_PASSWORD: Distribuidos
       PGDATA: /var/lib/postgresql/data/pgdata
-    networks:
-      - distribuidos
-networks:
-  resolute:
-    external:
-      name: distribuidos
+#     networks:
+#       - distribuidos
+# networks:
+#   resolute:
+#     external:
+#       name: distribuidos
