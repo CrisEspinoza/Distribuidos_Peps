@@ -14,4 +14,4 @@ if docker container ls -a | grep $CONTAINER > /dev/null; then
   docker container rm $CONTAINER
 fi
 
-docker-compose up -d
+#docker-compose up -d
