@@ -5,8 +5,8 @@ import { useHistory } from "react-router-dom";
 const blankUser = {
   rut: "",
   name: "",
-  adress: "",
-  goal: "",
+  address: "",
+  reason: "",
 };
 const Permission = ({ ...props }) => {
   const [userData, setUserData] = useState({ ...blankUser });
@@ -41,17 +41,17 @@ const Permission = ({ ...props }) => {
       />
       <TextField
         className="col-12 col-lg-6 pr-lg-1"
-        id="adress"
+        id="address"
         label="Dirección"
         value={userData.address}
-        onChange={changeUserData("adress")}
+        onChange={changeUserData("address")}
       />
       <TextField
         className="col-12 col-lg-6 pr-lg-1"
-        id="goal"
+        id="reason"
         label="Motivo del permiso"
         value={userData.reason}
-        onChange={changeUserData("goal")}
+        onChange={changeUserData("reason")}
       />
       <Button
         className="mt-3"
