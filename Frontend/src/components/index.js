@@ -1,2 +1,3 @@
 import Navbar from "./navbar";
-export { Navbar };
+import PrimaryButton from "./primaryButton";
+export { Navbar, PrimaryButton };

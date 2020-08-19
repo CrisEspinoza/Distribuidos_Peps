@@ -1,3 +1,36 @@
-.background-navbar{
-    background-color: #cfcfcf;
+.background-navbar {
+  background-color: #1f7028;
+  color: white;
+  nav {
+    a {
+      color: white;
+      font-size: 1rem;
+    }
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .background-navbar {
+    background-color: #1f7028;
+    font-size: 2rem;
+    color: white;
+    nav {
+      a {
+        color: white;
+        font-size: 1.24rem;
+      }
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
 }
