@@ -31,20 +31,19 @@ const VerifyPermission = ({ ...props }) => {
       })
       .catch(({ response }) => {
         if (response.status === 404) {
-          console.log("Error al procesar la solicitud: ", response);
           setPermissionStatus({
             valid: false,
             wasQueried: true,
             error: "El permiso que has solicitado no existe",
           });
+        } else {
+          setPermissionStatus({
+            valid: false,
+            wasQueried: true,
+            error:
+              "Ha ocurrido un problema al procesar tu solicitud, inténtalo nuevamente en unos minutos",
+          });
         }
-        console.log("Error al procesar la solicitud: ", response);
-        setPermissionStatus({
-          valid: false,
-          wasQueried: true,
-          error:
-            "Ha ocurrido un problema al procesar tu solicitud, inténtalo nuevamente en unos minutos",
-        });
       });
   };
   const showResult = () => {
@@ -55,7 +54,7 @@ const VerifyPermission = ({ ...props }) => {
           <p>
             Tu permiso se encuentra
             <span style={{ color: permissionStatus.valid ? "#34A745" : "red" }}>
-              {message}
+              {` ${message}`}
             </span>
           </p>
         </div>
