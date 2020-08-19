@@ -1,0 +1,34 @@
+config:
+
+  target: 'http://34.71.30.13:1818'
+  phases:
+    # Se mantiene un trafico constante durante 60 segundos
+    - duration: 60 # Duacion de la prueba
+      arrivalCount: 20000 # Cantidad de usuarios que se desean tener en el 
+      # sistema dentro de la duracion del sistema
+  
+  plugins:
+    statsd:
+      host: "localhost"
+      port: 8125
+      prefix: "artillery"
+
+  payload:
+    path: "data.csv"
+    fields:
+      - "name"
+      - "goal"
+      - "address"
+      - "reason"
+
+scenarios:
+
+  - flow:  
+    - post:
+        url: "/form"
+        json:
+          rut: "{{ rut }}"
+          name: "{{ name }}"
+          address: "{{ address }}"
+          reason: "{{ reason }}"
+    

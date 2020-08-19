@@ -1,0 +1,39 @@
+config:
+
+  target: 'http://34.71.30.13:1818'
+  phases:
+    # Aumenta luego de 30 segundos.
+    - duration: 30 # Duracion de test
+      arrivalRate: 0 # Peticiones por segundo
+      rampTo: 500 # Numero de peticiones que se quieren alcanzar
+
+    # Se aumenta las peticiones.
+    - duration: 30 # Duracion de test
+      arrivalRate: 0 # Peticiones por segundo
+      rampTo: 1000 # Numero de peticiones que se quieren alcanzar
+
+  plugins:
+    statsd:
+      host: "localhost"
+      port: 8125
+      prefix: "artillery"
+
+  payload:
+    path: "data.csv"
+    fields:
+      - "name"
+      - "goal"
+      - "address"
+      - "reason"
+
+scenarios:
+
+  - flow:  
+    - post:
+        url: "/form"
+        json:
+          rut: "{{ rut }}"
+          name: "{{ name }}"
+          address: "{{ address }}"
+          reason: "{{ reason }}"
+    
