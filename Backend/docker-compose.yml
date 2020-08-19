@@ -1,18 +1,29 @@
-version: '3'
+version: '3.5'
 
 services:
-  app:
-    image: "backend-distri"
+  backend:
+    image: "backend-distri-image"
+    container_name: api_distri_pep-container
     ports:
       - "1818:1818"
+    networks:
+      - distribuidospep
     depends_on:
-      - db
-
-  db:
-    image: "postgres:10.4"
+      - db_postgresql
+  db_postgresql:
+    container_name: db_postgresql
+    image: postgres:12.1
+    ports:
+      - '5432:5432'
+    #volumes:
+    #  - ./pgdata:/var/lib/postgresql/data/pgdata #primera parte es el disco duro del servidor, segunda parte es donde se encuentra la data dentro del contenedor.
     environment:
       POSTGRES_USER: Distribuidos
       POSTGRES_PASSWORD: Distribuidos
       POSTGRES_DB: Distribuidos
-    ports:
-      - "5432:5432"
+    networks:
+      - distribuidospep
+networks:
+  distribuidospep:
+    external: false
+    name: distribuidospep
