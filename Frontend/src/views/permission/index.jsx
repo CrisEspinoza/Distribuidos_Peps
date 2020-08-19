@@ -9,38 +9,11 @@ const blankUser = {
   address: "",
   reason: "",
 };
-const reverseString = (value) => {
-  if (!value) return "";
-  return value.split("").reverse().join("");
-};
-const parseRutToString = (arr) => {
-  if (!arr) return null;
-  let formattedRut = arr.reduce((prev, curr, curr_index) => {
-    if (curr_index === 0) {
-      return prev;
-    }
-    if (curr_index === 1) {
-      return curr + "-";
-    }
-    return `${prev}${curr}.`;
-  }, "");
-  formattedRut = reverseString(formattedRut).slice(1)
-  return formattedRut
-};
+  
 
 const Permission = ({ ...props }) => {
   const [userData, setUserData] = useState({ ...blankUser });
   const changeUserData = (key) => (value) => {
-    if (key === "rut") {
-      console.log("rut: ", value.target.value);
-      let rut = reverseString(value.target.value);
-      let rutArr = rut.match(
-        "^([k]|[1-9]{1})([1-9]{1,3})([1-9]{1,3})([1-9]{1,3})$"
-      );
-      let rutFormatted = parseRutToString(rutArr);
-      console.log("value Match");
-      console.log(rutFormatted);
-    }
     setUserData({ ...userData, [key]: value.target.value });
   };
 
