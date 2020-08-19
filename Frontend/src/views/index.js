@@ -1,4 +1,5 @@
 import Home from "./home";
 import Permission from "./permission";
 import SuccessPermission from "./successPermission";
-export { Home, Permission, SuccessPermission };
+import VerifyPermission from "./verifyPermission";
+export { Home, Permission, SuccessPermission, VerifyPermission };

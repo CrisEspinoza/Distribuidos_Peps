@@ -6,11 +6,11 @@ const Navbar = ({ ...props }) => {
     <div className="background-navbar">
       <nav className="container d-inline-flex align-items-center">
         <span className="col-4">Comisaria virtual</span>
-        <NavLink className="col-2" to="/">
-          Home
+        <NavLink className="col-lg-2 col-3" to="/">
+          Obtener permiso
         </NavLink>
-        <NavLink className="col-2" to="/permission">
-          Permission
+        <NavLink className="col-lg-2 col-3" to="/permission">
+          Verificar permiso
         </NavLink>
       </nav>
     </div>
