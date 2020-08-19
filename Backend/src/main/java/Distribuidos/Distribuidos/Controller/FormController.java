@@ -43,7 +43,7 @@ public class FormController {
         try {
             return ResponseEntity.ok(formService.validForm(id_form));
         } catch (Exception e) {
-            return ResponseEntity.badRequest().build();
+            return ResponseEntity.status(404).build();
         }
     }
 
