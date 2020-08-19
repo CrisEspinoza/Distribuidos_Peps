@@ -9,7 +9,6 @@ const blankUser = {
   address: "",
   reason: "",
 };
-  
 
 const Permission = ({ ...props }) => {
   const [userData, setUserData] = useState({ ...blankUser });
@@ -20,7 +19,7 @@ const Permission = ({ ...props }) => {
   const history = useHistory();
   const submitData = () => {
     axios
-      .post("http://localhost:1818/form", userData)
+      .post(`${process.env.REACT_APP_API_HOST}/form`, userData)
       .then((result) => {
         console.log("La solicitud ha sido realizada satisfactoriamente: ");
         history.push("permissionSuccess", { permission: result.data });
