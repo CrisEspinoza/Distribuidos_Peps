@@ -1,12 +1,11 @@
 config:
 
-  target: 'http://34.71.30.13:1818'
+  target: 'http://35.226.46.146:1818'
   phases:
-    # Se realiza una secual en donde se va aumentadno la cantidad de usuarios
-    # a medida que pasan los segundos.
-    - duration: 30
-      arrivalRate: 0
-      rampTo: 10
+    # Se mantiene un trafico constante durante 60 segundos
+    - duration: 60 # Duacion de la prueba
+      arrivalCount: 100 # Cantidad de usuarios que se desean tener en el 
+      # sistema dentro de la duracion del sistema
   
   plugins:
     statsd:
@@ -15,10 +14,10 @@ config:
       prefix: "artillery"
 
   payload:
-    path: "data.csv"
+    path: "../data.csv"
     fields:
+      - "rut"
       - "name"
-      - "goal"
       - "address"
       - "reason"
 
@@ -32,7 +31,4 @@ scenarios:
           name: "{{ name }}"
           address: "{{ address }}"
           reason: "{{ reason }}"
-    - think: 3
-    - get:
-        url: "/form"
     

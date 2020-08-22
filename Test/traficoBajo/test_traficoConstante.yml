@@ -1,10 +1,10 @@
 config:
 
-  target: 'http://34.71.30.13:1818'
+  target: 'http://35.226.46.146:1818'
   phases:
     # Se mantiene un trafico constante durante 60 segundos
     - duration: 60 # Duacion de la prueba
-      arrivalCount: 20000 # Cantidad de usuarios que se desean tener en el 
+      arrivalCount: 100 # Cantidad de usuarios que se desean tener en el 
       # sistema dentro de la duracion del sistema
   
   plugins:
@@ -14,10 +14,10 @@ config:
       prefix: "artillery"
 
   payload:
-    path: "data.csv"
+    path: "../data.csv"
     fields:
+      - "rut"
       - "name"
-      - "goal"
       - "address"
       - "reason"
 
