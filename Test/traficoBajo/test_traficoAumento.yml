@@ -22,7 +22,7 @@ config:
     path: "../data.csv"
     fields:
       - "name"
-      - "goal"
+      - "rut"
       - "address"
       - "reason"
 
