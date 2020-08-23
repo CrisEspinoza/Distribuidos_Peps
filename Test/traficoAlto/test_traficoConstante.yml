@@ -4,7 +4,7 @@ config:
   phases:
     # Se mantiene un trafico constante durante 60 segundos
     - duration: 60 # Duacion de la prueba
-      arrivalCount: 100 # Cantidad de usuarios que se desean tener en el 
+      arrivalCount: 10000 # Cantidad de usuarios que se desean tener en el 
       # sistema dentro de la duracion del sistema
   
   plugins:

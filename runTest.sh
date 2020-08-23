@@ -28,17 +28,21 @@ pauseInterScript(){
 }
 runArtillery(){
     echo "Iniciando los test de carga $RUNNING_SEQ_TEXT"
-    echo 'Running test aumento'
-    artillery run -o $SCRIPTS_DIR/$OUTPUT_DIR/test_traficoAumento.json $SCRIPTS_DIR/test_traficoAumento.yml
+    echo 'Running test Disminuye'
+    artillery run -o $SCRIPTS_DIR/$OUTPUT_DIR/test_traficoDisminuye.json $SCRIPTS_DIR/test_traficoDisminuye.yml
+    artillery report $SCRIPTS_DIR/$OUTPUT_DIR/test_traficoDisminuye.json
         pauseInterScript
     echo 'Running test Constante'
-    artillery run $SCRIPTS_DIR/$OUTPUT_DIR/test_traficoConstante.json $SCRIPTS_DIR/test_traficoConstante.yml
+    artillery run -o $SCRIPTS_DIR/$OUTPUT_DIR/test_traficoConstante.json $SCRIPTS_DIR/test_traficoConstante.yml
+    artillery report $SCRIPTS_DIR/$OUTPUT_DIR/test_traficoConstante.json
         pauseInterScript
-    echo 'Running test Disminuye'
-    artillery run $SCRIPTS_DIR/$OUTPUT_DIR/test_traficoDisminuye.json $SCRIPTS_DIR/test_traficoDisminuye.yml
+    echo 'Running test aumento'
+    artillery run -o $SCRIPTS_DIR/$OUTPUT_DIR/test_traficoAumento.json $SCRIPTS_DIR/test_traficoAumento.yml
+    artillery report $SCRIPTS_DIR/$OUTPUT_DIR/test_traficoAumento.json
         pauseInterScript
     echo 'Running test Gradual'
-    artillery run $SCRIPTS_DIR/$OUTPUT_DIR/test_traficoGradual.json $SCRIPTS_DIR/test_traficoGradual.yml
+    artillery run -o $SCRIPTS_DIR/$OUTPUT_DIR/test_traficoGradual.json $SCRIPTS_DIR/test_traficoGradual.yml
+    artillery report $SCRIPTS_DIR/$OUTPUT_DIR/test_traficoGradual.json
         pauseInterScript
     
 }

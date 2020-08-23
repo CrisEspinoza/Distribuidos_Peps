@@ -4,7 +4,7 @@ config:
   phases:
     # Se realiza una secual en donde se va aumentadno la cantidad de usuarios
     # a medida que pasan los segundos.
-    - duration: 30
+    - duration: 60
       arrivalRate: 0
       rampTo: 10
   

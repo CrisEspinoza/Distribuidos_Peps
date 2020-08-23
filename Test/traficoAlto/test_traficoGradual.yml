@@ -6,7 +6,7 @@ config:
     # a medida que pasan los segundos.
     - duration: 30
       arrivalRate: 0
-      rampTo: 10
+      rampTo: 100
   
   plugins:
     statsd:

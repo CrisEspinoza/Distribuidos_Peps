@@ -8,8 +8,8 @@ config:
 
     # Disminuyen las peticiones durante 30 segundos.
     - duration: 30
-      arrivalRate: 10
-      rampTo: 50
+      arrivalRate: 0
+      rampTo: 25
   
   plugins:
     statsd:
@@ -21,7 +21,7 @@ config:
     path: "../data.csv"
     fields:
       - "name"
-      - "rut"
+      - "goal"
       - "address"
       - "reason"
 

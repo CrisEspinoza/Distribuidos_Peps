@@ -4,12 +4,12 @@ config:
   phases:
     # Se realizan las peticiones.
     - duration: 30
-      arrivalRate: 50
+      arrivalRate: 150
 
     # Disminuyen las peticiones durante 30 segundos.
     - duration: 30
-      arrivalRate: 10
-      rampTo: 50
+      arrivalRate: 0
+      rampTo: 75
   
   plugins:
     statsd:
