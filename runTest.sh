@@ -16,6 +16,7 @@ MID_DIR='./Test/traficoMedio'
 HIGH_DIR='./Test/traficoAlto'
 SCRIPTS_DIR=$LOW_DIR
 RUNNING_SEQ_TEXT="baja"
+OUTPUT_DIR="results"
 # ----------------------------------
 # Step #2: User defined function
 # ----------------------------------
@@ -28,17 +29,17 @@ pauseInterScript(){
 runArtillery(){
     echo "Iniciando los test de carga $RUNNING_SEQ_TEXT"
     echo 'Running test aumento'
-    artillery run $SCRIPTS_DIR/test_traficoAumento.yml
-        pause
+    artillery run -o $SCRIPTS_DIR/$OUTPUT_DIR/test_traficoAumento.json $SCRIPTS_DIR/test_traficoAumento.yml
+        pauseInterScript
     echo 'Running test Constante'
-    artillery run $SCRIPTS_DIR/test_traficoConstante.yml
-        pause
+    artillery run $SCRIPTS_DIR/$OUTPUT_DIR/test_traficoConstante.json $SCRIPTS_DIR/test_traficoConstante.yml
+        pauseInterScript
     echo 'Running test Disminuye'
-    artillery run $SCRIPTS_DIR/test_traficoDisminuye.yml
-        pause
+    artillery run $SCRIPTS_DIR/$OUTPUT_DIR/test_traficoDisminuye.json $SCRIPTS_DIR/test_traficoDisminuye.yml
+        pauseInterScript
     echo 'Running test Gradual'
-    artillery run $SCRIPTS_DIR/test_traficoGradual.yml
-        pause
+    artillery run $SCRIPTS_DIR/$OUTPUT_DIR/test_traficoGradual.json $SCRIPTS_DIR/test_traficoGradual.yml
+        pauseInterScript
     
 }
 
