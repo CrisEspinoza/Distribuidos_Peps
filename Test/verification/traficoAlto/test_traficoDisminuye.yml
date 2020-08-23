@@ -1,0 +1,40 @@
+config:
+
+  target: 'http://35.226.46.146:1818'
+  phases:
+    # Se realizan las peticiones.
+    - duration: 30
+      arrivalRate: 250
+
+    # Disminuyen las peticiones y aumentan durante 30 segundos.
+    - duration: 30
+      arrivalRate: 0
+      rampTo: 125
+  
+  plugins:
+    statsd:
+      host: "localhost"
+      port: 8125
+      prefix: "artillery"
+
+  payload:
+    path: "../../data.csv"
+    fields:
+      - "name"
+      - "goal"
+      - "address"
+      - "reason"
+
+scenarios:
+
+  - flow:  
+    - post:
+        url: "/form"
+        json:
+          rut: "{{ rut }}"
+          name: "{{ name }}"
+          address: "{{ address }}"
+          reason: "{{ reason }}"
+    - think: 3
+    - get:
+        url: "/form"
