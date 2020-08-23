@@ -14,31 +14,52 @@ STD='\033[0;0;39m'
 LOW_DIR='./Test/traficoBajo'
 MID_DIR='./Test/traficoMedio'
 HIGH_DIR='./Test/traficoAlto'
+SCRIPTS_DIR=$LOW_DIR
+RUNNING_SEQ_TEXT="baja"
 # ----------------------------------
 # Step #2: User defined function
 # ----------------------------------
 pause(){
-  read -p "Press [Enter] key to continue..." fackEnterKey
+  read -p "Presiona la tecla [Enter] para volver al menu ..." fackEnterKey
 }
-
+pauseInterScript(){
+  read -p "Presiona la tecla [Enter] para Pasar al proximo test ..." fackEnterKey
+}
 runArtillery(){
+    echo "Iniciando los test de carga $RUNNING_SEQ_TEXT"
     echo 'Running test aumento'
+    artillery run $SCRIPTS_DIR/test_traficoAumento.yml
         pause
+    echo 'Running test Constante'
+    artillery run $SCRIPTS_DIR/test_traficoConstante.yml
+        pause
+    echo 'Running test Disminuye'
+    artillery run $SCRIPTS_DIR/test_traficoDisminuye.yml
+        pause
+    echo 'Running test Gradual'
+    artillery run $SCRIPTS_DIR/test_traficoGradual.yml
+        pause
+    
 }
 
 low(){
-	echo "low"
-    runArtillery()
+    SCRIPTS_DIR=$LOW_DIR
+    RUNNING_SEQ_TEXT="Baja"
+    runArtillery
         pause
 }
  
 mid(){
-	echo "mid"
+    SCRIPTS_DIR=$MID_DIR
+    RUNNING_SEQ_TEXT="Media"
+    runArtillery
         pause
 }
  
 high(){
-	echo "high"
+    SCRIPTS_DIR=$HIGH_DIR
+    RUNNING_SEQ_TEXT="Alta"
+    runArtillery
         pause
 }
 
@@ -49,9 +70,9 @@ show_menus() {
 	echo "~~~~~~~~~~~~~~~~~~~~~"	
 	echo " M A I N - M E N U"
 	echo "~~~~~~~~~~~~~~~~~~~~~"
-	echo "1. ${GREEN_BK} ${BLACK}Run low ${STD}"
-	echo "2. ${YELLOW_BK} ${BLACK}Run mid ${STD}"
-	echo "3. ${PURPLE_BK} ${BLACK}Run high ${STD}"
+	echo "1. ${GREEN_BK} ${BLACK}Iniciar Baja ${STD}"
+	echo "2. ${YELLOW_BK} ${BLACK}Iniciar Media ${STD}"
+	echo "3. ${PURPLE_BK} ${BLACK}Iniciar Alta ${STD}"
 	echo "4. Exit"
 }
 # read input from the keyboard and take a action
@@ -80,7 +101,6 @@ trap '' SIGINT SIGQUIT SIGTSTP
 # ------------------------------------
 while true
 do
- 
 	show_menus
 	read_options
 done
