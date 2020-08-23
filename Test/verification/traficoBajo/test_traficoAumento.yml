@@ -18,19 +18,11 @@ config:
   payload: 
     path: "../../data.csv"
     fields:
-      - "name"
-      - "rut"
-      - "address"
-      - "reason"
+      - "id"
 
 scenarios:
 
   - flow:  
-    - post:
-        url: "/form"
-        json:
-          rut: "{{ rut }}"
-          name: "{{ name }}"
-          address: "{{ address }}"
-          reason: "{{ reason }}"
+    - get:
+        url: "/form/{{id}}/valid"
     
