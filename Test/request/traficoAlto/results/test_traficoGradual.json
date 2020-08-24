@@ -1,7 +1,7 @@
 {
   "aggregate": {
-    "timestamp": "2020-08-23T23:52:25.390Z",
-    "scenariosCreated": 1521,
+    "timestamp": "2020-08-24T00:25:54.259Z",
+    "scenariosCreated": 1522,
     "scenariosCompleted": 0,
     "requestsCompleted": 0,
     "latency": {
@@ -12,8 +12,8 @@
       "p99": null
     },
     "rps": {
-      "count": 1521,
-      "mean": 6.27
+      "count": 1522,
+      "mean": 7.44
     },
     "scenarioDuration": {
       "min": null,
@@ -23,11 +23,10 @@
       "p99": null
     },
     "scenarioCounts": {
-      "0": 1521
+      "0": 1522
     },
     "errors": {
-      "ESOCKETTIMEDOUT": 1505,
-      "ETIMEDOUT": 16
+      "ESOCKETTIMEDOUT": 1522
     },
     "codes": {},
     "matches": 0,
@@ -44,8 +43,8 @@
   },
   "intermediate": [
     {
-      "timestamp": "2020-08-23T23:48:30.137Z",
-      "scenariosCreated": 32,
+      "timestamp": "2020-08-24T00:22:38.014Z",
+      "scenariosCreated": 31,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
       "latency": {
@@ -56,8 +55,8 @@
         "p99": null
       },
       "rps": {
-        "count": 32,
-        "mean": 4.38
+        "count": 31,
+        "mean": 3.76
       },
       "scenarioDuration": {
         "min": null,
@@ -67,7 +66,7 @@
         "p99": null
       },
       "scenarioCounts": {
-        "0": 32
+        "0": 31
       },
       "errors": {},
       "codes": {},
@@ -75,13 +74,13 @@
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 32,
-      "pendingRequests": 32,
+      "concurrency": 31,
+      "pendingRequests": 31,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:48:40.126Z",
-      "scenariosCreated": 128,
+      "timestamp": "2020-08-24T00:22:48.004Z",
+      "scenariosCreated": 140,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
       "latency": {
@@ -92,8 +91,8 @@
         "p99": null
       },
       "rps": {
-        "count": 128,
-        "mean": 12.98
+        "count": 140,
+        "mean": 14.08
       },
       "scenarioDuration": {
         "min": null,
@@ -103,7 +102,7 @@
         "p99": null
       },
       "scenarioCounts": {
-        "0": 128
+        "0": 140
       },
       "errors": {},
       "codes": {},
@@ -111,13 +110,13 @@
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 160,
-      "pendingRequests": 160,
+      "concurrency": 171,
+      "pendingRequests": 171,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:48:50.119Z",
-      "scenariosCreated": 205,
+      "timestamp": "2020-08-24T00:22:58.002Z",
+      "scenariosCreated": 212,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
       "latency": {
@@ -128,8 +127,8 @@
         "p99": null
       },
       "rps": {
-        "count": 205,
-        "mean": 20.56
+        "count": 212,
+        "mean": 21.68
       },
       "scenarioDuration": {
         "min": null,
@@ -139,7 +138,7 @@
         "p99": null
       },
       "scenarioCounts": {
-        "0": 205
+        "0": 212
       },
       "errors": {},
       "codes": {},
@@ -147,13 +146,13 @@
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 365,
-      "pendingRequests": 365,
+      "concurrency": 383,
+      "pendingRequests": 383,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:49:00.121Z",
-      "scenariosCreated": 308,
+      "timestamp": "2020-08-24T00:23:08.003Z",
+      "scenariosCreated": 291,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
       "latency": {
@@ -164,8 +163,8 @@
         "p99": null
       },
       "rps": {
-        "count": 308,
-        "mean": 30.8
+        "count": 291,
+        "mean": 29.45
       },
       "scenarioDuration": {
         "min": null,
@@ -175,7 +174,7 @@
         "p99": null
       },
       "scenarioCounts": {
-        "0": 308
+        "0": 291
       },
       "errors": {},
       "codes": {},
@@ -183,13 +182,13 @@
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 673,
-      "pendingRequests": 673,
+      "concurrency": 674,
+      "pendingRequests": 674,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:49:10.120Z",
-      "scenariosCreated": 378,
+      "timestamp": "2020-08-24T00:23:18.002Z",
+      "scenariosCreated": 381,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
       "latency": {
@@ -200,8 +199,8 @@
         "p99": null
       },
       "rps": {
-        "count": 378,
-        "mean": 37.8
+        "count": 381,
+        "mean": 38.14
       },
       "scenarioDuration": {
         "min": null,
@@ -211,7 +210,7 @@
         "p99": null
       },
       "scenarioCounts": {
-        "0": 378
+        "0": 381
       },
       "errors": {},
       "codes": {},
@@ -219,13 +218,13 @@
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 1051,
-      "pendingRequests": 1051,
+      "concurrency": 1055,
+      "pendingRequests": 1055,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:49:20.124Z",
-      "scenariosCreated": 461,
+      "timestamp": "2020-08-24T00:23:28.002Z",
+      "scenariosCreated": 458,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
       "latency": {
@@ -236,8 +235,8 @@
         "p99": null
       },
       "rps": {
-        "count": 461,
-        "mean": 46.1
+        "count": 458,
+        "mean": 45.85
       },
       "scenarioDuration": {
         "min": null,
@@ -247,7 +246,7 @@
         "p99": null
       },
       "scenarioCounts": {
-        "0": 461
+        "0": 458
       },
       "errors": {},
       "codes": {},
@@ -255,12 +254,12 @@
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 1512,
-      "pendingRequests": 1512,
+      "concurrency": 1513,
+      "pendingRequests": 1513,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:49:30.123Z",
+      "timestamp": "2020-08-24T00:23:38.004Z",
       "scenariosCreated": 9,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
@@ -291,12 +290,12 @@
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 1521,
-      "pendingRequests": 1521,
+      "concurrency": 1522,
+      "pendingRequests": 1522,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:49:40.125Z",
+      "timestamp": "2020-08-24T00:23:48.005Z",
       "scenariosCreated": 0,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
@@ -325,12 +324,12 @@
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 1521,
-      "pendingRequests": 1521,
+      "concurrency": 1522,
+      "pendingRequests": 1522,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:49:50.121Z",
+      "timestamp": "2020-08-24T00:23:58.006Z",
       "scenariosCreated": 0,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
@@ -359,12 +358,12 @@
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 1521,
-      "pendingRequests": 1521,
+      "concurrency": 1522,
+      "pendingRequests": 1522,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:50:00.124Z",
+      "timestamp": "2020-08-24T00:24:08.007Z",
       "scenariosCreated": 0,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
@@ -393,12 +392,12 @@
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 1521,
-      "pendingRequests": 1521,
+      "concurrency": 1522,
+      "pendingRequests": 1522,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:50:10.125Z",
+      "timestamp": "2020-08-24T00:24:18.006Z",
       "scenariosCreated": 0,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
@@ -427,12 +426,12 @@
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 1521,
-      "pendingRequests": 1521,
+      "concurrency": 1522,
+      "pendingRequests": 1522,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:50:20.125Z",
+      "timestamp": "2020-08-24T00:24:28.008Z",
       "scenariosCreated": 0,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
@@ -461,12 +460,12 @@
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 1521,
-      "pendingRequests": 1521,
+      "concurrency": 1522,
+      "pendingRequests": 1522,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:50:30.127Z",
+      "timestamp": "2020-08-24T00:24:38.013Z",
       "scenariosCreated": 0,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
@@ -490,19 +489,19 @@
       },
       "scenarioCounts": {},
       "errors": {
-        "ESOCKETTIMEDOUT": 28
+        "ESOCKETTIMEDOUT": 25
       },
       "codes": {},
       "matches": 0,
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 1493,
-      "pendingRequests": 1521,
+      "concurrency": 1497,
+      "pendingRequests": 1522,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:50:40.127Z",
+      "timestamp": "2020-08-24T00:24:48.006Z",
       "scenariosCreated": 0,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
@@ -526,19 +525,19 @@
       },
       "scenarioCounts": {},
       "errors": {
-        "ESOCKETTIMEDOUT": 115
+        "ESOCKETTIMEDOUT": 142
       },
       "codes": {},
       "matches": 0,
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 1378,
-      "pendingRequests": 1521,
+      "concurrency": 1355,
+      "pendingRequests": 1522,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:50:50.126Z",
+      "timestamp": "2020-08-24T00:24:58.007Z",
       "scenariosCreated": 0,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
@@ -562,19 +561,19 @@
       },
       "scenarioCounts": {},
       "errors": {
-        "ESOCKETTIMEDOUT": 201
+        "ESOCKETTIMEDOUT": 189
       },
       "codes": {},
       "matches": 0,
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 1177,
-      "pendingRequests": 1521,
+      "concurrency": 1166,
+      "pendingRequests": 1522,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:51:00.143Z",
+      "timestamp": "2020-08-24T00:25:08.006Z",
       "scenariosCreated": 0,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
@@ -605,12 +604,12 @@
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 893,
-      "pendingRequests": 1521,
+      "concurrency": 882,
+      "pendingRequests": 1522,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:51:10.129Z",
+      "timestamp": "2020-08-24T00:25:18.008Z",
       "scenariosCreated": 0,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
@@ -634,19 +633,19 @@
       },
       "scenarioCounts": {},
       "errors": {
-        "ESOCKETTIMEDOUT": 381
+        "ESOCKETTIMEDOUT": 395
       },
       "codes": {},
       "matches": 0,
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 512,
-      "pendingRequests": 1521,
+      "concurrency": 487,
+      "pendingRequests": 1522,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:51:20.129Z",
+      "timestamp": "2020-08-24T00:25:28.007Z",
       "scenariosCreated": 0,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
@@ -670,92 +669,19 @@
       },
       "scenarioCounts": {},
       "errors": {
-        "ESOCKETTIMEDOUT": 158,
-        "ETIMEDOUT": 16
+        "ESOCKETTIMEDOUT": 426
       },
       "codes": {},
       "matches": 0,
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 338,
-      "pendingRequests": 1521,
+      "concurrency": 61,
+      "pendingRequests": 1522,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:51:30.131Z",
-      "scenariosCreated": 0,
-      "scenariosCompleted": 0,
-      "requestsCompleted": 0,
-      "latency": {
-        "min": null,
-        "max": null,
-        "median": null,
-        "p95": null,
-        "p99": null
-      },
-      "rps": {
-        "count": 0,
-        "mean": null
-      },
-      "scenarioDuration": {
-        "min": null,
-        "max": null,
-        "median": null,
-        "p95": null,
-        "p99": null
-      },
-      "scenarioCounts": {},
-      "errors": {
-        "ESOCKETTIMEDOUT": 106
-      },
-      "codes": {},
-      "matches": 0,
-      "latencies": [],
-      "customStats": {},
-      "counters": {},
-      "concurrency": 232,
-      "pendingRequests": 1521,
-      "scenariosAvoided": 0
-    },
-    {
-      "timestamp": "2020-08-23T23:51:40.130Z",
-      "scenariosCreated": 0,
-      "scenariosCompleted": 0,
-      "requestsCompleted": 0,
-      "latency": {
-        "min": null,
-        "max": null,
-        "median": null,
-        "p95": null,
-        "p99": null
-      },
-      "rps": {
-        "count": 0,
-        "mean": null
-      },
-      "scenarioDuration": {
-        "min": null,
-        "max": null,
-        "median": null,
-        "p95": null,
-        "p99": null
-      },
-      "scenarioCounts": {},
-      "errors": {
-        "ESOCKETTIMEDOUT": 80
-      },
-      "codes": {},
-      "matches": 0,
-      "latencies": [],
-      "customStats": {},
-      "counters": {},
-      "concurrency": 152,
-      "pendingRequests": 1521,
-      "scenariosAvoided": 0
-    },
-    {
-      "timestamp": "2020-08-23T23:51:50.128Z",
+      "timestamp": "2020-08-24T00:25:38.010Z",
       "scenariosCreated": 0,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
@@ -784,80 +710,12 @@
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 152,
-      "pendingRequests": 1521,
+      "concurrency": 61,
+      "pendingRequests": 1522,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:52:00.129Z",
-      "scenariosCreated": 0,
-      "scenariosCompleted": 0,
-      "requestsCompleted": 0,
-      "latency": {
-        "min": null,
-        "max": null,
-        "median": null,
-        "p95": null,
-        "p99": null
-      },
-      "rps": {
-        "count": 0,
-        "mean": null
-      },
-      "scenarioDuration": {
-        "min": null,
-        "max": null,
-        "median": null,
-        "p95": null,
-        "p99": null
-      },
-      "scenarioCounts": {},
-      "errors": {},
-      "codes": {},
-      "matches": 0,
-      "latencies": [],
-      "customStats": {},
-      "counters": {},
-      "concurrency": 152,
-      "pendingRequests": 1521,
-      "scenariosAvoided": 0
-    },
-    {
-      "timestamp": "2020-08-23T23:52:10.130Z",
-      "scenariosCreated": 0,
-      "scenariosCompleted": 0,
-      "requestsCompleted": 0,
-      "latency": {
-        "min": null,
-        "max": null,
-        "median": null,
-        "p95": null,
-        "p99": null
-      },
-      "rps": {
-        "count": 0,
-        "mean": null
-      },
-      "scenarioDuration": {
-        "min": null,
-        "max": null,
-        "median": null,
-        "p95": null,
-        "p99": null
-      },
-      "scenarioCounts": {},
-      "errors": {},
-      "codes": {},
-      "matches": 0,
-      "latencies": [],
-      "customStats": {},
-      "counters": {},
-      "concurrency": 152,
-      "pendingRequests": 1521,
-      "scenariosAvoided": 0
-    },
-    {
-      "timestamp": "2020-08-23T23:52:20.129Z",
+      "timestamp": "2020-08-24T00:25:48.007Z",
       "scenariosCreated": 0,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
@@ -881,19 +739,19 @@
       },
       "scenarioCounts": {},
       "errors": {
-        "ESOCKETTIMEDOUT": 19
+        "ESOCKETTIMEDOUT": 59
       },
       "codes": {},
       "matches": 0,
       "latencies": [],
       "customStats": {},
       "counters": {},
-      "concurrency": 133,
-      "pendingRequests": 1521,
+      "concurrency": 2,
+      "pendingRequests": 1522,
       "scenariosAvoided": 0
     },
     {
-      "timestamp": "2020-08-23T23:52:25.381Z",
+      "timestamp": "2020-08-24T00:25:54.252Z",
       "scenariosCreated": 0,
       "scenariosCompleted": 0,
       "requestsCompleted": 0,
@@ -917,7 +775,7 @@
       },
       "scenarioCounts": {},
       "errors": {
-        "ESOCKETTIMEDOUT": 133
+        "ESOCKETTIMEDOUT": 2
       },
       "codes": {},
       "matches": 0,
@@ -925,7 +783,7 @@
       "customStats": {},
       "counters": {},
       "concurrency": 0,
-      "pendingRequests": 1521,
+      "pendingRequests": 1522,
       "scenariosAvoided": 0
     }
   ]
